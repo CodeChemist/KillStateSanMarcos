@@ -5,6 +5,7 @@
 [Oo]bj/
 [Bb]uild
 [Ll]ibrary/
+[Ll]ocal/   #custom folder for files not needed to sync
 sysinfo.txt
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
