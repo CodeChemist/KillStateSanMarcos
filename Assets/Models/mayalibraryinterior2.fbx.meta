@@ -109,6 +109,54 @@ ModelImporter:
     100206: window
     100208: window1
     100210: window2
+    100212: Floor3
+    100214: Floor4
+    100216: group5
+    100218: group6
+    100220: NorthFace1
+    100222: pCube104
+    100224: pCube106
+    100226: pCube107
+    100228: rdfloorCopyroom
+    100230: Stairs
+    100232: Step3_1
+    100234: Step3_10
+    100236: Step3_11
+    100238: Step3_12
+    100240: Step3_13
+    100242: Step3_14
+    100244: Step3_15
+    100246: Step3_16
+    100248: Step3_17
+    100250: Step3_18
+    100252: Step3_19
+    100254: Step3_2
+    100256: Step3_20
+    100258: Step3_21
+    100260: Step3_22
+    100262: Step3_23
+    100264: Step3_24
+    100266: Step3_25
+    100268: Step3_26
+    100270: Step3_27a
+    100272: Step3_27b
+    100274: Step3_28
+    100276: Step3_29
+    100278: Step3_3
+    100280: Step3_30
+    100282: Step3_31
+    100284: Step3_32
+    100286: Step3_33
+    100288: Step3_4
+    100290: Step3_5
+    100292: Step3_6
+    100294: Step3_7
+    100296: Step3_8
+    100298: Step3_9
+    100300: transform13
+    100302: transform14
+    100304: transform15
+    100306: transform16
     400000: Column1
     400002: Column3
     400004: ElevatorShaft1
@@ -215,6 +263,54 @@ ModelImporter:
     400206: window
     400208: window1
     400210: window2
+    400212: Floor3
+    400214: Floor4
+    400216: group5
+    400218: group6
+    400220: NorthFace1
+    400222: pCube104
+    400224: pCube106
+    400226: pCube107
+    400228: rdfloorCopyroom
+    400230: Stairs
+    400232: Step3_1
+    400234: Step3_10
+    400236: Step3_11
+    400238: Step3_12
+    400240: Step3_13
+    400242: Step3_14
+    400244: Step3_15
+    400246: Step3_16
+    400248: Step3_17
+    400250: Step3_18
+    400252: Step3_19
+    400254: Step3_2
+    400256: Step3_20
+    400258: Step3_21
+    400260: Step3_22
+    400262: Step3_23
+    400264: Step3_24
+    400266: Step3_25
+    400268: Step3_26
+    400270: Step3_27a
+    400272: Step3_27b
+    400274: Step3_28
+    400276: Step3_29
+    400278: Step3_3
+    400280: Step3_30
+    400282: Step3_31
+    400284: Step3_32
+    400286: Step3_33
+    400288: Step3_4
+    400290: Step3_5
+    400292: Step3_6
+    400294: Step3_7
+    400296: Step3_8
+    400298: Step3_9
+    400300: transform13
+    400302: transform14
+    400304: transform15
+    400306: transform16
     2300000: Column1
     2300002: Column3
     2300004: ElevatorShaft1
@@ -313,6 +409,47 @@ ModelImporter:
     2300190: window
     2300192: window1
     2300194: window2
+    2300196: Floor3
+    2300198: Floor4
+    2300200: NorthFace1
+    2300202: pCube104
+    2300204: pCube106
+    2300206: pCube107
+    2300208: rdfloorCopyroom
+    2300210: Step3_1
+    2300212: Step3_10
+    2300214: Step3_11
+    2300216: Step3_12
+    2300218: Step3_13
+    2300220: Step3_14
+    2300222: Step3_15
+    2300224: Step3_16
+    2300226: Step3_17
+    2300228: Step3_18
+    2300230: Step3_19
+    2300232: Step3_2
+    2300234: Step3_20
+    2300236: Step3_21
+    2300238: Step3_22
+    2300240: Step3_23
+    2300242: Step3_24
+    2300244: Step3_25
+    2300246: Step3_26
+    2300248: Step3_27a
+    2300250: Step3_27b
+    2300252: Step3_28
+    2300254: Step3_29
+    2300256: Step3_3
+    2300258: Step3_30
+    2300260: Step3_31
+    2300262: Step3_32
+    2300264: Step3_33
+    2300266: Step3_4
+    2300268: Step3_5
+    2300270: Step3_6
+    2300272: Step3_7
+    2300274: Step3_8
+    2300276: Step3_9
     3300000: Column1
     3300002: Column3
     3300004: ElevatorShaft1
@@ -411,6 +548,47 @@ ModelImporter:
     3300190: window
     3300192: window1
     3300194: window2
+    3300196: Floor3
+    3300198: Floor4
+    3300200: NorthFace1
+    3300202: pCube104
+    3300204: pCube106
+    3300206: pCube107
+    3300208: rdfloorCopyroom
+    3300210: Step3_1
+    3300212: Step3_10
+    3300214: Step3_11
+    3300216: Step3_12
+    3300218: Step3_13
+    3300220: Step3_14
+    3300222: Step3_15
+    3300224: Step3_16
+    3300226: Step3_17
+    3300228: Step3_18
+    3300230: Step3_19
+    3300232: Step3_2
+    3300234: Step3_20
+    3300236: Step3_21
+    3300238: Step3_22
+    3300240: Step3_23
+    3300242: Step3_24
+    3300244: Step3_25
+    3300246: Step3_26
+    3300248: Step3_27a
+    3300250: Step3_27b
+    3300252: Step3_28
+    3300254: Step3_29
+    3300256: Step3_3
+    3300258: Step3_30
+    3300260: Step3_31
+    3300262: Step3_32
+    3300264: Step3_33
+    3300266: Step3_4
+    3300268: Step3_5
+    3300270: Step3_6
+    3300272: Step3_7
+    3300274: Step3_8
+    3300276: Step3_9
     4300000: NorthFace
     4300002: NorthEastFace
     4300004: NorthWestFace
@@ -509,6 +687,46 @@ ModelImporter:
     4300190: pCube100
     4300192: pCube102
     4300194: pCube101
+    4300196: rdfloorCopyroom
+    4300200: pCube106
+    4300202: NorthFace1
+    4300204: Floor3
+    4300206: pCube107
+    4300208: Step3_11
+    4300210: Step3_12
+    4300212: Step3_13
+    4300214: Step3_14
+    4300216: Step3_15
+    4300218: Step3_16
+    4300220: Step3_17
+    4300222: Step3_18
+    4300224: Step3_19
+    4300226: Step3_20
+    4300228: Step3_1
+    4300230: Step3_2
+    4300232: Step3_3
+    4300234: Step3_4
+    4300236: Step3_5
+    4300238: Step3_6
+    4300240: Step3_7
+    4300242: Step3_8
+    4300244: Step3_9
+    4300246: Step3_10
+    4300248: Step3_22
+    4300250: Step3_23
+    4300252: Step3_24
+    4300254: Step3_25
+    4300256: Step3_26
+    4300258: Step3_27a
+    4300260: Step3_28
+    4300262: Step3_21
+    4300264: Step3_29
+    4300266: Step3_30
+    4300268: Step3_31
+    4300270: Step3_32
+    4300272: Step3_27b
+    4300274: Step3_33
+    4300276: Floor4
     6400000: Column1
     6400002: Column3
     6400004: ElevatorShaft1
@@ -607,6 +825,47 @@ ModelImporter:
     6400190: window
     6400192: window1
     6400194: window2
+    6400196: Floor3
+    6400198: Floor4
+    6400200: NorthFace1
+    6400202: pCube104
+    6400204: pCube106
+    6400206: pCube107
+    6400208: rdfloorCopyroom
+    6400210: Step3_1
+    6400212: Step3_10
+    6400214: Step3_11
+    6400216: Step3_12
+    6400218: Step3_13
+    6400220: Step3_14
+    6400222: Step3_15
+    6400224: Step3_16
+    6400226: Step3_17
+    6400228: Step3_18
+    6400230: Step3_19
+    6400232: Step3_2
+    6400234: Step3_20
+    6400236: Step3_21
+    6400238: Step3_22
+    6400240: Step3_23
+    6400242: Step3_24
+    6400244: Step3_25
+    6400246: Step3_26
+    6400248: Step3_27a
+    6400250: Step3_27b
+    6400252: Step3_28
+    6400254: Step3_29
+    6400256: Step3_3
+    6400258: Step3_30
+    6400260: Step3_31
+    6400262: Step3_32
+    6400264: Step3_33
+    6400266: Step3_4
+    6400268: Step3_5
+    6400270: Step3_6
+    6400272: Step3_7
+    6400274: Step3_8
+    6400276: Step3_9
     9500000: //RootNode
   materials:
     importMaterials: 1
