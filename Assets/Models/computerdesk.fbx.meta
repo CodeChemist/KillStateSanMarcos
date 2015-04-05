@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: c949c2efcc8fb184fbd9fe83e0229a7a
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
     100002: group
@@ -47,6 +47,8 @@ ModelImporter:
     100082: transform7
     100084: transform8
     100086: transform9
+    100088: mats
+    100090: wood
     400000: //RootNode
     400002: group
     400004: group1
@@ -91,12 +93,20 @@ ModelImporter:
     400082: transform7
     400084: transform8
     400086: transform9
+    400088: mats
+    400090: wood
     2300000: pCube11
     2300002: pCube9
+    2300004: mats
+    2300006: wood
     3300000: pCube11
     3300002: pCube9
+    3300004: mats
+    3300006: wood
     4300000: pCube9
     4300002: pCube11
+    4300004: wood
+    4300006: mats
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -125,11 +135,13 @@ ModelImporter:
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
+    keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
@@ -152,3 +164,5 @@ ModelImporter:
   animationType: 2
   additionalBone: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
