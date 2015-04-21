@@ -11,7 +11,7 @@ public class Motor : MonoBehaviour {
 	public Transform target;
 	public float ViewAngle = 60;
 	public float maxRange = 10f;
-	private Animation animation;
+	private Animator animator;
     // Kinematic
     public Vector3 velocity;
 
@@ -27,13 +27,13 @@ public class Motor : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         character = this.transform;
-
+		animator = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-	
+		animator.SetFloat("Speed",velocity.magnitude);
 		RaycastHit hit;
 		float angle;
 
@@ -85,6 +85,21 @@ public class Motor : MonoBehaviour {
 			{
 				KinWander ();
 			}
+	}
+
+
+
+
+	public void OnTriggerEnter (Collider other) {
+		if (other.transform == target.transform) {
+			animator.SetBool("Attack",true);
+		}
+	}
+
+	public void OnTriggerExit(Collider other) {
+		if (other.transform == target.transform) {
+			animator.SetBool("Attack",false);
+		}
 	}
 	
 	// Begin various functions for movement, pass in target
