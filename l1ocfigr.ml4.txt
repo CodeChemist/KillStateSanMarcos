@@ -1,0 +1,47 @@
+﻿Merge remote-tracking branch 'origin/master'
+
+Conflicts:
+	Assets/Models/Zombie/zombie_fast.fbx.meta
+	Assets/Scenes/campus.harrison.unity
+	Assets/Scripts/Motor.cs
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 1 and 2 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	modified:   Assets/Scenes - CHASE Copy/campus.backup.unity
+#	deleted:    Assets/Scenes/campus.harrison.unity
+#	deleted:    Assets/Scripts/Motor.cs
+#	modified:   Assets/Scripts/Zombie.controller
+#	renamed:    Assets/Scenes/campus.harrison.unity.meta -> Assets/UnityVS.meta
+#	new file:   Assets/UnityVS/Editor.meta
+#	new file:   Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll
+#	new file:   Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll.meta
+#	new file:   Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll
+#	new file:   Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll.meta
+#	new file:   Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll
+#	new file:   Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll.meta
+#	new file:   Assets/User Interface/CGF Off-Road.ttf
+#	new file:   Assets/User Interface/CGF Off-Road.ttf.meta
+#	new file:   Assets/User Interface/Menu/menuScript.cs
+#	new file:   Assets/User Interface/Menu/menuScript.cs.meta
+#	new file:   Assets/User Interface/coldnightforalligators.ttf
+#	new file:   Assets/User Interface/coldnightforalligators.ttf.meta
+#	new file:   Assets/User Interface/typwrng.ttf
+#	new file:   Assets/User Interface/typwrng.ttf.meta
+#	modified:   ProjectSettings/EditorBuildSettings.asset
+#	modified:   ProjectSettings/ProjectSettings.asset
+#
+
