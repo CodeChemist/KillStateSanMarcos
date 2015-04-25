@@ -54,11 +54,10 @@ public class Motor : MonoBehaviour {
         else if (rotation < -maxRotation)
             rotation = -maxRotation;
 
-
 		character.Translate(velocity * Time.deltaTime, Space.World);
 		character.Rotate(character.up, rotation);
-
-		if (Physics.Raycast (transform.position, (target.position - transform.position), out hit, maxRange)) { //raycast to target
+		Debug.DrawRay (transform.position + new Vector3(0f,0.8f,0.3f), (target.position - transform.position));
+		if (Physics.Raycast (transform.position + new Vector3(0f,0.8f,0.3f), (target.position - transform.position), out hit, maxRange)) { //raycast to target
 			angle = Vector3.Angle (target.position - character.position, transform.forward);//angle between target and object
 			if ((hit.transform == target) && (angle <= (ViewAngle / 2))) {//if target is in sight and withing view width
 				seen = true;
