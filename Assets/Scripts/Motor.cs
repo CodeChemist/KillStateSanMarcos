@@ -33,59 +33,56 @@ public class Motor : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-		animator.SetFloat("Speed",velocity.magnitude);
+		animator.SetFloat ("Speed", velocity.magnitude);
 		RaycastHit hit;
 		float angle;
 
-        if (acceleration.magnitude > maxAccel)
-            acceleration = acceleration.normalized * maxAccel;
-        if (angular > maxAngular)
-            angular = maxAngular;
-        else if (angular < -maxAngular)
-            angular = -maxAngular;
+		if (acceleration.magnitude > maxAccel)
+			acceleration = acceleration.normalized * maxAccel;
+		if (angular > maxAngular)
+			angular = maxAngular;
+		else if (angular < -maxAngular)
+			angular = -maxAngular;
 
-        velocity += acceleration;
-        rotation += angular;
+		velocity += acceleration;
+		rotation += angular;
 
-        if (velocity.magnitude > maxSpeed)
-            velocity = velocity.normalized * maxSpeed;
-        if (rotation > maxRotation)
-            rotation = maxRotation;
-        else if (rotation < -maxRotation)
-            rotation = -maxRotation;
+		if (velocity.magnitude > maxSpeed)
+			velocity = velocity.normalized * maxSpeed;
+		if (rotation > maxRotation)
+			rotation = maxRotation;
+		else if (rotation < -maxRotation)
+			rotation = -maxRotation;
 
-		character.Translate(velocity * Time.deltaTime, Space.World);
-		character.Rotate(character.up, rotation);
-		Debug.DrawRay (transform.position + new Vector3(0f,0.8f,0.3f), (target.position - transform.position));
-		if (Physics.Raycast (transform.position + new Vector3(0f,0.8f,0.3f), (target.position - transform.position), out hit, maxRange)) { //raycast to target
+		character.Translate (velocity * Time.deltaTime, Space.World);
+		character.Rotate (character.up, rotation);
+		Debug.DrawRay (transform.position + new Vector3 (0f, 0.8f, 0.3f), (target.position - transform.position));
+
+		if (Physics.Raycast (transform.position + new Vector3 (0f, 0.8f, 0.3f), (target.position - transform.position), out hit, maxRange)) { //raycast to target
 			angle = Vector3.Angle (target.position - character.position, transform.forward);//angle between target and object
 			if ((hit.transform == target) && (angle <= (ViewAngle / 2))) {//if target is in sight and withing view width
+				Debug.Log (hit.collider);
 				seen = true;
 				wander = false;
 				lastSeen = target.position;
 				KinSeek (target);
 
 				// In Range and i can see you!
-			} 
-		}
-			else if (seen == true) 
-			{
-			velocity = (lastSeen - character.position).normalized * maxSpeed;
-				character.rotation = Quaternion.LookRotation(velocity);
+			} else if (seen == true) {
+				velocity = (lastSeen - character.position).normalized * maxSpeed;
+				character.rotation = Quaternion.LookRotation (velocity);
 				//not seen, move to last location
-			//print ("lastSeen "+ lastSeen.x+ "position "+ character.position.x );
-				if ((lastSeen - character.position).magnitude <.1) //arrived at last seen location 
-				{
+				//print ("lastSeen "+ lastSeen.x+ "position "+ character.position.x );
+				if ((lastSeen - character.position).magnitude < .1) { //arrived at last seen location
 
 					wander = true;
 					seen = false;
 				}
-			} else if (wander == true) 
-			{
+			} else if (wander == true) {
 				KinWander ();
 			}
+		}
 	}
-
 
 
 

@@ -286,7 +286,7 @@ function DidJump ()
 	_characterState = CharacterState.Jumping;
 }
 
-function Update() {
+function FixedUpdate() {
 	
 	if (!isControllable)
 	{
@@ -347,7 +347,7 @@ function Update() {
 					_animation.CrossFade(walkAnimation.name);	
 				}
 				else if(_characterState == CharacterState.Walking) {
-					Debug.Log(" name " + Mathf.Clamp(controller.velocity.magnitude, 0.0, walkMaxAnimationSpeed));
+				//	Debug.Log(" name " + Mathf.Clamp(controller.velocity.magnitude, 0.0, walkMaxAnimationSpeed));
 					_animation[walkAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0, walkMaxAnimationSpeed);
 					_animation.CrossFade(walkAnimation.name);	
 				}
