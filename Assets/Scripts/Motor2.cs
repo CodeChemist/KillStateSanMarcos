@@ -32,7 +32,7 @@ public class Motor2 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-
+		GetComponent<Animation>().Play("Walking");
 		RaycastHit hit;
 		float angle;
 		

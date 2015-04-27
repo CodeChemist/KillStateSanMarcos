@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 397f9db6687eac941af21d6c30e32c7a
-timeCreated: 1429496477
+timeCreated: 1430108139
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -107,6 +107,8 @@ ModelImporter:
     400096: RTumb2
     400098: Scene_Root
     400100: //RootNode
+    2300000: Mesh1
+    3300000: Mesh1
     4300000: Mesh1
     7400000: Dying
     7400002: Attacking
@@ -114,6 +116,8 @@ ModelImporter:
     7400006: Reincarnating
     7400008: Idle
     9500000: //RootNode
+    11100000: Mesh1
+    11100002: //RootNode
     13700000: Mesh1
   materials:
     importMaterials: 1
@@ -124,7 +128,7 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
@@ -276,7 +280,7 @@ ModelImporter:
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
+      keepOriginalPositionXZ: 1
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
@@ -806,7 +810,7 @@ ModelImporter:
     armStretch: .0500000007
     legStretch: .0500000007
     feetSpacing: 0
-    rootMotionBoneName: 
+    rootMotionBoneName: Mesh1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   additionalBone: 0

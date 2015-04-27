@@ -14,7 +14,6 @@ public class Motor : MonoBehaviour {
 	private Animator animator;
     // Kinematic
     public Vector3 velocity;
-
     public float rotation = 0f;
 
     // Steering
@@ -60,8 +59,9 @@ public class Motor : MonoBehaviour {
 
 		if (Physics.Raycast (transform.position + new Vector3 (0f, 0.8f, 0.3f), (target.position - transform.position), out hit, maxRange)) { //raycast to target
 			angle = Vector3.Angle (target.position - character.position, transform.forward);//angle between target and object
+			Debug.Log (hit.transform);
 			if ((hit.transform == target) && (angle <= (ViewAngle / 2))) {//if target is in sight and withing view width
-				Debug.Log (hit.collider);
+
 				seen = true;
 				wander = false;
 				lastSeen = target.position;
@@ -69,6 +69,7 @@ public class Motor : MonoBehaviour {
 
 				// In Range and i can see you!
 			} else if (seen == true) {
+
 				velocity = (lastSeen - character.position).normalized * maxSpeed;
 				character.rotation = Quaternion.LookRotation (velocity);
 				//not seen, move to last location
@@ -78,9 +79,9 @@ public class Motor : MonoBehaviour {
 					wander = true;
 					seen = false;
 				}
-			} else if (wander == true) {
+			} else
 				KinWander ();
-			}
+			
 		}
 	}
 
