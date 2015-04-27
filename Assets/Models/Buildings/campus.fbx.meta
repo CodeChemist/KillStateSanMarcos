@@ -17,6 +17,9 @@ ModelImporter:
     100018: pCylinder1
     100020: CougarCircle1
     100022: GrassAndWalkway1
+    100024: pCube9
+    100026: polySurface60
+    100028: Stairs
     400000: //RootNode
     400002: CougarCircle
     400004: GrassAndWalkway
@@ -29,6 +32,9 @@ ModelImporter:
     400018: pCylinder1
     400020: CougarCircle1
     400022: GrassAndWalkway1
+    400024: pCube9
+    400026: polySurface60
+    400028: Stairs
     2300000: CougarCircle
     2300002: GrassAndWalkway
     2300004: inner_grass
@@ -40,6 +46,8 @@ ModelImporter:
     2300016: CougarCircle1
     2300018: GrassAndWalkway1
     2300020: //RootNode
+    2300022: polySurface60
+    2300024: Stairs
     3300000: CougarCircle
     3300002: GrassAndWalkway
     3300004: inner_grass
@@ -51,6 +59,8 @@ ModelImporter:
     3300016: CougarCircle1
     3300018: GrassAndWalkway1
     3300020: //RootNode
+    3300022: polySurface60
+    3300024: Stairs
     4300000: pCylinder1
     4300002: pCube1
     4300004: inner_grass
@@ -62,6 +72,8 @@ ModelImporter:
     4300016: GrassAndWalkway1
     4300018: CougarCircle1
     4300020: GrassAndWalkway2
+    4300022: polySurface60
+    4300024: Stairs
   materials:
     importMaterials: 1
     materialName: 0

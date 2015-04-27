@@ -86,7 +86,8 @@ public class PlayerHealth : MonoBehaviour
 
         //playerShooting.DisableEffects ();        //this line was commented out when I get here...
 
-        anim.SetTrigger ("Die");
+		// invalid reference chase, needs fixing ~chris
+        //anim.SetTrigger ("Die");
 
         //playerAudio.clip = deathClip;
         //playerAudio.Play ();

@@ -37,6 +37,7 @@ ModelImporter:
     2300014: leftinnerwall
     2300016: rearinnerwall
     2300018: rightinnerwall
+    2300020: //RootNode
     3300000: pCube2
     3300002: pCube6
     3300004: building
@@ -47,6 +48,7 @@ ModelImporter:
     3300014: leftinnerwall
     3300016: rearinnerwall
     3300018: rightinnerwall
+    3300020: //RootNode
     4300000: pCube2
     4300002: pCube6
     4300004: dome
@@ -57,6 +59,7 @@ ModelImporter:
     4300014: rightinnerwall
     4300016: leftinnerwall
     4300018: rearinnerwall
+    4300020: Academic_Hall
   materials:
     importMaterials: 1
     materialName: 0
