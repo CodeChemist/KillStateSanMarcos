@@ -9,7 +9,7 @@ public class Motor : MonoBehaviour {
     public float maxRotation = 1f;
     public float maxAngular = 0.8f;
 	public Transform target;
-	public float ViewAngle = 60;
+	public float ViewAngle = 180;
 	public float maxRange = 10f;
 	private Animator animator;
     // Kinematic
@@ -26,7 +26,7 @@ public class Motor : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         character = this.transform;
-		animator = GetComponent<Animator>();
+		animator = GetComponentInChildren<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -53,13 +53,14 @@ public class Motor : MonoBehaviour {
 		else if (rotation < -maxRotation)
 			rotation = -maxRotation;
 
-		character.Translate (velocity * Time.deltaTime, Space.World);
-		character.Rotate (character.up, rotation);
-		Debug.DrawRay (transform.position + new Vector3 (0f, 0.8f, 0.3f), (target.position - transform.position));
+		character.Translate(velocity * Time.deltaTime, Space.World);
+		character.Rotate(character.up, rotation);
 
-		if (Physics.Raycast (transform.position + new Vector3 (0f, 0.8f, 0.3f), (target.position - transform.position), out hit, maxRange)) { //raycast to target
+		Debug.DrawRay (transform.position+ new Vector3 (0f, 0.8f, 0f), (target.position - transform.position),Color.blue);
+
+		if (Physics.Raycast (transform.position+ new Vector3 (0f, 0.8f, 0f), (target.position - transform.position), out hit, maxRange)) { //raycast to target
 			angle = Vector3.Angle (target.position - character.position, transform.forward);//angle between target and object
-			Debug.Log (hit.transform);
+
 			if ((hit.transform == target) && (angle <= (ViewAngle / 2))) {//if target is in sight and withing view width
 
 				seen = true;
@@ -79,9 +80,9 @@ public class Motor : MonoBehaviour {
 					wander = true;
 					seen = false;
 				}
-			} else
+			} else if (wander == true) {
 				KinWander ();
-			
+			}
 		}
 	}
 
@@ -98,7 +99,7 @@ public class Motor : MonoBehaviour {
 			animator.SetBool("Attack",false);
 		}
 	}
-	
+
 	// Begin various functions for movement, pass in target
 
     public void Stop()
@@ -194,49 +195,6 @@ public class Motor : MonoBehaviour {
         }
     }
 
-    // Align - Still works with pure rotation. Make it work with acceleration
-    public void Align(Transform target)
-    {
-        Quaternion quat = Quaternion.FromToRotation(character.forward, target.forward);
-
-        float tempRot = quat.eulerAngles.y;
-
-        if (tempRot > 180)
-            rotation = tempRot - 360;
-        else
-            rotation = tempRot;
-
-        //// Getting the rotation into the -pi to pi range
-        //if (rotation > Mathf.PI || rotation < -Mathf.PI)
-        //{
-        //    float temp = rotation % 2 * Mathf.PI;
-        //    rotation += temp * 2 * Mathf.PI;
-        //}
-
-        //float rotationSize = Mathf.Abs(rotDirection);
-
-        //if (rotationSize > slowRadius)
-        //    targetRotation = maxRotation;
-        //else
-        //    targetRotation = maxRotation * rotationSize / slowRadius;
-
-        //targetRotation *= rotDirection / rotationSize;
-
-        //angular = targetRotation - rotation;
-        //angular /= timeToTarget;
-    }
-
-    // VelocityMatch
-    public void VelocityMatch(Transform target, float timeToTarget)
-    {
-        Motor motor = target.GetComponent<Motor>();
-
-        acceleration = motor.velocity - velocity;
-        acceleration /= timeToTarget;
-    }
-
-    // Delegated Behaviors - Remember to find someway to remove the constant getcomponent
-
     // Pursue
     public void Pursue(Transform target)
     {
@@ -295,34 +253,7 @@ public class Motor : MonoBehaviour {
         Destroy(newTarget);
     }
 
-    // Face target
-    public void Face(Transform target)
-    {
-        Quaternion quat = Quaternion.FromToRotation(character.forward, target.position - character.position);
 
-        float tempRot = quat.eulerAngles.y;
-
-        if (tempRot > 180)
-            rotation = tempRot - 360;
-        else
-            rotation = tempRot;
-    }
-
-    // LookWhereYoureGoing
-    public void LookWhereYoureGoing()
-    {
-        if (velocity.magnitude == 0)
-            return;
-
-        Quaternion quat = Quaternion.FromToRotation(character.forward, velocity);
-
-        float tempRot = quat.eulerAngles.y;
-
-        if (tempRot > 180)
-            rotation = tempRot - 360 ;
-        else
-            rotation = tempRot;
-    }
     
     // Obstacle Avoidance
     public void ObstacleAvoidance()

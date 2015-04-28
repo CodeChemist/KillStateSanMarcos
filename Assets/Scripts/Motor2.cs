@@ -9,12 +9,11 @@ public class Motor2 : MonoBehaviour {
 	public float maxRotation = 1f;
 	public float maxAngular = 0.8f;
 	public Transform target;
-	public float ViewAngle = 60;
-	public float maxRange = 10f;
-	private Animator animator;
+	public float ViewAngle = 90;
+	public float maxRange = 5f;
+	//private Animation animation;
 	// Kinematic
 	public Vector3 velocity;
-	
 	public float rotation = 0f;
 	
 	// Steering
@@ -28,11 +27,11 @@ public class Motor2 : MonoBehaviour {
 	void Start () {
 		character = this.transform;
 	}
-	
+
 	// Update is called once per frame
 	void Update () 
 	{
-		GetComponent<Animation>().Play("Walking");
+			
 		RaycastHit hit;
 		float angle;
 		
@@ -55,49 +54,34 @@ public class Motor2 : MonoBehaviour {
 		
 		character.Translate(velocity * Time.deltaTime, Space.World);
 		character.Rotate(character.up, rotation);
-		Debug.DrawRay (transform.position + new Vector3(0f,0.8f,0.3f), (target.position - transform.position));
-		if (Physics.Raycast (transform.position + new Vector3(0f,0.8f,0.3f), (target.position - transform.position), out hit, maxRange)) { //raycast to target
+
+		Debug.DrawRay (transform.position+ new Vector3 (0f, 0.8f, 0f), (target.position - transform.position), Color.blue);
+
+		if (Physics.Raycast (transform.position+ new Vector3 (0f,.8f,0f), (target.position - transform.position), out hit, maxRange)) { //raycast to target
 			angle = Vector3.Angle (target.position - character.position, transform.forward);//angle between target and object
+		
 			if ((hit.transform == target) && (angle <= (ViewAngle / 2))) {//if target is in sight and withing view width
-				Debug.Log(velocity);
+		
 				seen = true;
 				wander = false;
 				lastSeen = target.position;
 				KinSeek (target);
 				
 				// In Range and i can see you!
-			} 
-		}
-		else if (seen == true) 
-		{
-			velocity = (lastSeen - character.position).normalized * maxSpeed;
-			character.rotation = Quaternion.LookRotation(velocity);
-			//not seen, move to last location
-			//print ("lastSeen "+ lastSeen.x+ "position "+ character.position.x );
-			if ((lastSeen - character.position).magnitude <.1) //arrived at last seen location 
-			{
-				
-				wander = true;
-				seen = false;
+			} else if (seen == true) {
+
+				velocity = (lastSeen - character.position).normalized * maxSpeed;
+				character.rotation = Quaternion.LookRotation (velocity);
+				//not seen, move to last location
+				//print ("lastSeen "+ lastSeen.x+ "position "+ character.position.x );
+				if ((lastSeen - character.position).magnitude < .1) { //arrived at last seen location
+					
+					wander = true;
+					seen = false;
+				}
+			} else if (wander == true) {
+				KinWander ();
 			}
-		} else if (wander == true) 
-		{
-			KinWander ();
-		}
-	}
-	
-	
-	
-	
-	public void OnTriggerEnter (Collider other) {
-		if (other.transform == target.transform) {
-
-		}
-	}
-	
-	public void OnTriggerExit(Collider other) {
-		if (other.transform == target.transform) {
-
 		}
 	}
 	
