@@ -128,7 +128,637 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Dying
+      takeName: Dying
+      firstFrame: 0
+      lastFrame: 97.5
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh1
+        weight: 1
+      - path: Scene_Root
+        weight: 1
+      - path: Scene_Root/Main__Hips_
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg/LeftLowerLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg/LeftLowerLeg/LeftFoot
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg/LeftLowerLeg/LeftFoot/LeftToes
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LForeFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LForeFinger1/LForeFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LForeFinger1/LForeFinger2/LForeFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LLittleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LLittleFinger1/LLittleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LLittleFinger1/LLittleFinger2/LLittleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LMiddleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LMiddleFinger1/LMiddleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LMiddleFinger1/LMiddleFinger2/LMiddleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LRingFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LRingFinger1/LRingFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LRingFinger1/LRingFinger2/LRingFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LTumb1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LTumb1/LTumb2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/Neck
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RForeFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RForeFinger1/RForeFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RForeFinger1/RForeFinger2/RForeFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RLittleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RLittleFinger1/RLittleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RLittleFinger1/RLittleFinger2/RLittleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RMiddleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RMiddleFinger1/RMiddleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RMiddleFinger1/RMiddleFinger2/RMiddleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RRingFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RRingFinger1/RRingFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RRingFinger1/RRingFinger2/RRingFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RTumb1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RTumb1/RTumb2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg/RightLowerLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg/RightLowerLeg/RightFoot
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg/RightLowerLeg/RightFoot/RightToes
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attacking
+      takeName: Attacking
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh1
+        weight: 1
+      - path: Scene_Root
+        weight: 1
+      - path: Scene_Root/Main__Hips_
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg/LeftLowerLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg/LeftLowerLeg/LeftFoot
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg/LeftLowerLeg/LeftFoot/LeftToes
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LForeFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LForeFinger1/LForeFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LForeFinger1/LForeFinger2/LForeFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LLittleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LLittleFinger1/LLittleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LLittleFinger1/LLittleFinger2/LLittleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LMiddleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LMiddleFinger1/LMiddleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LMiddleFinger1/LMiddleFinger2/LMiddleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LRingFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LRingFinger1/LRingFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LRingFinger1/LRingFinger2/LRingFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LTumb1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LTumb1/LTumb2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/Neck
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RForeFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RForeFinger1/RForeFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RForeFinger1/RForeFinger2/RForeFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RLittleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RLittleFinger1/RLittleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RLittleFinger1/RLittleFinger2/RLittleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RMiddleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RMiddleFinger1/RMiddleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RMiddleFinger1/RMiddleFinger2/RMiddleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RRingFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RRingFinger1/RRingFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RRingFinger1/RRingFinger2/RRingFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RTumb1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RTumb1/RTumb2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg/RightLowerLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg/RightLowerLeg/RightFoot
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg/RightLowerLeg/RightFoot/RightToes
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walking
+      takeName: Walking
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh1
+        weight: 1
+      - path: Scene_Root
+        weight: 1
+      - path: Scene_Root/Main__Hips_
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg/LeftLowerLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg/LeftLowerLeg/LeftFoot
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg/LeftLowerLeg/LeftFoot/LeftToes
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LForeFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LForeFinger1/LForeFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LForeFinger1/LForeFinger2/LForeFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LLittleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LLittleFinger1/LLittleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LLittleFinger1/LLittleFinger2/LLittleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LMiddleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LMiddleFinger1/LMiddleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LMiddleFinger1/LMiddleFinger2/LMiddleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LRingFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LRingFinger1/LRingFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LRingFinger1/LRingFinger2/LRingFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LTumb1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LTumb1/LTumb2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/Neck
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RForeFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RForeFinger1/RForeFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RForeFinger1/RForeFinger2/RForeFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RLittleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RLittleFinger1/RLittleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RLittleFinger1/RLittleFinger2/RLittleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RMiddleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RMiddleFinger1/RMiddleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RMiddleFinger1/RMiddleFinger2/RMiddleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RRingFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RRingFinger1/RRingFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RRingFinger1/RRingFinger2/RRingFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RTumb1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RTumb1/RTumb2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg/RightLowerLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg/RightLowerLeg/RightFoot
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg/RightLowerLeg/RightFoot/RightToes
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Reincarnating
+      takeName: Reincarnating
+      firstFrame: 0
+      lastFrame: 142
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh1
+        weight: 1
+      - path: Scene_Root
+        weight: 1
+      - path: Scene_Root/Main__Hips_
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg/LeftLowerLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg/LeftLowerLeg/LeftFoot
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg/LeftLowerLeg/LeftFoot/LeftToes
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LForeFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LForeFinger1/LForeFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LForeFinger1/LForeFinger2/LForeFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LLittleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LLittleFinger1/LLittleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LLittleFinger1/LLittleFinger2/LLittleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LMiddleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LMiddleFinger1/LMiddleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LMiddleFinger1/LMiddleFinger2/LMiddleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LRingFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LRingFinger1/LRingFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LRingFinger1/LRingFinger2/LRingFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LTumb1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LTumb1/LTumb2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/Neck
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RForeFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RForeFinger1/RForeFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RForeFinger1/RForeFinger2/RForeFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RLittleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RLittleFinger1/RLittleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RLittleFinger1/RLittleFinger2/RLittleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RMiddleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RMiddleFinger1/RMiddleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RMiddleFinger1/RMiddleFinger2/RMiddleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RRingFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RRingFinger1/RRingFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RRingFinger1/RRingFinger2/RRingFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RTumb1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RTumb1/RTumb2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg/RightLowerLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg/RightLowerLeg/RightFoot
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg/RightLowerLeg/RightFoot/RightToes
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 210
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh1
+        weight: 1
+      - path: Scene_Root
+        weight: 1
+      - path: Scene_Root/Main__Hips_
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg/LeftLowerLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg/LeftLowerLeg/LeftFoot
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LeftUpperLeg/LeftLowerLeg/LeftFoot/LeftToes
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LForeFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LForeFinger1/LForeFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LForeFinger1/LForeFinger2/LForeFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LLittleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LLittleFinger1/LLittleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LLittleFinger1/LLittleFinger2/LLittleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LMiddleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LMiddleFinger1/LMiddleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LMiddleFinger1/LMiddleFinger2/LMiddleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LRingFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LRingFinger1/LRingFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LRingFinger1/LRingFinger2/LRingFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LTumb1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/LeftUpperArm/LeftLowerArm/LeftHand/LTumb1/LTumb2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/Neck
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RForeFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RForeFinger1/RForeFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RForeFinger1/RForeFinger2/RForeFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RLittleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RLittleFinger1/RLittleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RLittleFinger1/RLittleFinger2/RLittleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RMiddleFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RMiddleFinger1/RMiddleFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RMiddleFinger1/RMiddleFinger2/RMiddleFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RRingFinger1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RRingFinger1/RRingFinger2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RRingFinger1/RRingFinger2/RRingFinger3
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RTumb1
+        weight: 1
+      - path: Scene_Root/Main__Hips_/LowerBack/Back/Chest/RightUpperArm/RightLowerArm/RightHand/RTumb1/RTumb2
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg/RightLowerLeg
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg/RightLowerLeg/RightFoot
+        weight: 1
+      - path: Scene_Root/Main__Hips_/RightUpperLeg/RightLowerLeg/RightFoot/RightToes
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

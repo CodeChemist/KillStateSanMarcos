@@ -11,7 +11,12 @@ public class Motor : MonoBehaviour {
 	public Transform target;
 	public float ViewAngle = 180;
 	public float maxRange = 10f;
+
+	private PlayerHealth playerHealth;
 	private Animator animator;
+	private float nextDamageStep;
+	public float attackDelay = 1;
+
     // Kinematic
     public Vector3 velocity;
     public float rotation = 0f;
@@ -23,10 +28,12 @@ public class Motor : MonoBehaviour {
 	private bool seen = false;
     private Transform character;
 	private bool wander = false;
+
 	// Use this for initialization
 	void Start () {
         character = this.transform;
 		animator = GetComponentInChildren<Animator>();
+		playerHealth = target.GetComponent<PlayerHealth>();
 	}
 	
 	// Update is called once per frame
@@ -91,12 +98,18 @@ public class Motor : MonoBehaviour {
 	public void OnTriggerEnter (Collider other) {
 		if (other.transform == target.transform) {
 			animator.SetBool("Attack",true);
+			if (Time.time >= nextDamageStep)
+			{
+				nextDamageStep = Time.time + attackDelay;
+				playerHealth.currentHealth -= 10;
+			}
 		}
 	}
 
 	public void OnTriggerExit(Collider other) {
 		if (other.transform == target.transform) {
 			animator.SetBool("Attack",false);
+			nextDamageStep = Time.time + attackDelay;
 		}
 	}
 
@@ -115,8 +128,12 @@ public class Motor : MonoBehaviour {
     // KinSeek
     public void KinSeek(Transform target)
     {
-		velocity = (target.position - character.position).normalized * maxSpeed;
-		character.rotation = Quaternion.LookRotation(target.position - character.position);
+		if (animator.GetBool("Attack") == true)
+			velocity = new Vector3 (0,0,0);
+		else
+		velocity = new Vector3 (target.position.x - character.position.x , 0f ,target.position.z - character.position.z).normalized * maxSpeed;
+		Vector3 lookAt = new Vector3(target.position.x - character.position.x, 0 ,target.position.z - character.position.z);
+		character.rotation = Quaternion.LookRotation(lookAt);
     }
 
 
@@ -267,7 +284,6 @@ public class Motor : MonoBehaviour {
             GameObject newTarget = new GameObject();
             newTarget.transform.position = hit.point + hit.normal * 2.5f;
             Seek(newTarget.transform);
-            Destroy(newTarget);
         }
     }
 }
