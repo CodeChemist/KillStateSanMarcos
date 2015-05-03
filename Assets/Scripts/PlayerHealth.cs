@@ -1,5 +1,4 @@
 ﻿/*
- * 
  * ------------------------------- PlayerHealth.cs -------------------------------
  * 
  * Purpose:     To manage the player health UI events.
