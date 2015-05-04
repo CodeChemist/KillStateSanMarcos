@@ -20,6 +20,70 @@ ModelImporter:
     100024: pCube9
     100026: polySurface60
     100028: Stairs
+    100030: frontsteps3:Banisters
+    100032: frontsteps3:Center
+    100034: frontsteps3:group1
+    100036: frontsteps3:group2
+    100038: frontsteps3:group3
+    100040: frontsteps3:group4
+    100042: frontsteps3:group5
+    100044: frontsteps3:group6
+    100046: frontsteps3:pCube16
+    100048: frontsteps3:pCube17
+    100050: frontsteps3:pCube18
+    100052: frontsteps3:pCube5
+    100054: frontsteps3:pCube5 1
+    100056: frontsteps3:pCube5 2
+    100058: frontsteps3:pCube5 3
+    100060: frontsteps3:pCube5 4
+    100062: frontsteps3:pCube5 5
+    100064: frontsteps3:pCube6
+    100066: frontsteps3:pCube6 1
+    100068: frontsteps3:pCube6 2
+    100070: frontsteps3:pCube6 3
+    100072: frontsteps3:pCube6 4
+    100074: frontsteps3:pCube6 5
+    100076: frontsteps3:pCube7
+    100078: frontsteps3:pCube7 1
+    100080: frontsteps3:pCube7 2
+    100082: frontsteps3:pCube7 3
+    100084: frontsteps3:pCube7 4
+    100086: frontsteps3:pCube7 5
+    100088: frontsteps3:pCube8
+    100090: frontsteps3:Stairs
+    100092: group1
+    100094: frontsteps4:Banisters
+    100096: frontsteps4:Center
+    100098: frontsteps4:group1
+    100100: frontsteps4:group2
+    100102: frontsteps4:group3
+    100104: frontsteps4:group4
+    100106: frontsteps4:group5
+    100108: frontsteps4:group6
+    100110: frontsteps4:pCube16
+    100112: frontsteps4:pCube17
+    100114: frontsteps4:pCube18
+    100116: frontsteps4:pCube5
+    100118: frontsteps4:pCube5 1
+    100120: frontsteps4:pCube5 2
+    100122: frontsteps4:pCube5 3
+    100124: frontsteps4:pCube5 4
+    100126: frontsteps4:pCube5 5
+    100128: frontsteps4:pCube6
+    100130: frontsteps4:pCube6 1
+    100132: frontsteps4:pCube6 2
+    100134: frontsteps4:pCube6 3
+    100136: frontsteps4:pCube6 4
+    100138: frontsteps4:pCube6 5
+    100140: frontsteps4:pCube7
+    100142: frontsteps4:pCube7 1
+    100144: frontsteps4:pCube7 2
+    100146: frontsteps4:pCube7 3
+    100148: frontsteps4:pCube7 4
+    100150: frontsteps4:pCube7 5
+    100152: frontsteps4:pCube8
+    100154: frontsteps4:Stairs
+    100156: campus
     400000: //RootNode
     400002: CougarCircle
     400004: GrassAndWalkway
@@ -35,6 +99,70 @@ ModelImporter:
     400024: pCube9
     400026: polySurface60
     400028: Stairs
+    400030: frontsteps3:Banisters
+    400032: frontsteps3:Center
+    400034: frontsteps3:group1
+    400036: frontsteps3:group2
+    400038: frontsteps3:group3
+    400040: frontsteps3:group4
+    400042: frontsteps3:group5
+    400044: frontsteps3:group6
+    400046: frontsteps3:pCube16
+    400048: frontsteps3:pCube17
+    400050: frontsteps3:pCube18
+    400052: frontsteps3:pCube5
+    400054: frontsteps3:pCube5 1
+    400056: frontsteps3:pCube5 2
+    400058: frontsteps3:pCube5 3
+    400060: frontsteps3:pCube5 4
+    400062: frontsteps3:pCube5 5
+    400064: frontsteps3:pCube6
+    400066: frontsteps3:pCube6 1
+    400068: frontsteps3:pCube6 2
+    400070: frontsteps3:pCube6 3
+    400072: frontsteps3:pCube6 4
+    400074: frontsteps3:pCube6 5
+    400076: frontsteps3:pCube7
+    400078: frontsteps3:pCube7 1
+    400080: frontsteps3:pCube7 2
+    400082: frontsteps3:pCube7 3
+    400084: frontsteps3:pCube7 4
+    400086: frontsteps3:pCube7 5
+    400088: frontsteps3:pCube8
+    400090: frontsteps3:Stairs
+    400092: group1
+    400094: frontsteps4:Banisters
+    400096: frontsteps4:Center
+    400098: frontsteps4:group1
+    400100: frontsteps4:group2
+    400102: frontsteps4:group3
+    400104: frontsteps4:group4
+    400106: frontsteps4:group5
+    400108: frontsteps4:group6
+    400110: frontsteps4:pCube16
+    400112: frontsteps4:pCube17
+    400114: frontsteps4:pCube18
+    400116: frontsteps4:pCube5
+    400118: frontsteps4:pCube5 1
+    400120: frontsteps4:pCube5 2
+    400122: frontsteps4:pCube5 3
+    400124: frontsteps4:pCube5 4
+    400126: frontsteps4:pCube5 5
+    400128: frontsteps4:pCube6
+    400130: frontsteps4:pCube6 1
+    400132: frontsteps4:pCube6 2
+    400134: frontsteps4:pCube6 3
+    400136: frontsteps4:pCube6 4
+    400138: frontsteps4:pCube6 5
+    400140: frontsteps4:pCube7
+    400142: frontsteps4:pCube7 1
+    400144: frontsteps4:pCube7 2
+    400146: frontsteps4:pCube7 3
+    400148: frontsteps4:pCube7 4
+    400150: frontsteps4:pCube7 5
+    400152: frontsteps4:pCube8
+    400154: frontsteps4:Stairs
+    400156: campus
     2300000: CougarCircle
     2300002: GrassAndWalkway
     2300004: inner_grass
@@ -48,6 +176,55 @@ ModelImporter:
     2300020: //RootNode
     2300022: polySurface60
     2300024: Stairs
+    2300026: frontsteps3:Center
+    2300028: frontsteps3:pCube16
+    2300030: frontsteps3:pCube17
+    2300032: frontsteps3:pCube18
+    2300034: frontsteps3:pCube5
+    2300036: frontsteps3:pCube5 1
+    2300038: frontsteps3:pCube5 2
+    2300040: frontsteps3:pCube5 3
+    2300042: frontsteps3:pCube5 4
+    2300044: frontsteps3:pCube5 5
+    2300046: frontsteps3:pCube6
+    2300048: frontsteps3:pCube6 1
+    2300050: frontsteps3:pCube6 2
+    2300052: frontsteps3:pCube6 3
+    2300054: frontsteps3:pCube6 4
+    2300056: frontsteps3:pCube6 5
+    2300058: frontsteps3:pCube7
+    2300060: frontsteps3:pCube7 1
+    2300062: frontsteps3:pCube7 2
+    2300064: frontsteps3:pCube7 3
+    2300066: frontsteps3:pCube7 4
+    2300068: frontsteps3:pCube7 5
+    2300070: frontsteps3:pCube8
+    2300072: frontsteps3:Stairs
+    2300074: frontsteps4:Center
+    2300076: frontsteps4:pCube16
+    2300078: frontsteps4:pCube17
+    2300080: frontsteps4:pCube18
+    2300082: frontsteps4:pCube5
+    2300084: frontsteps4:pCube5 1
+    2300086: frontsteps4:pCube5 2
+    2300088: frontsteps4:pCube5 3
+    2300090: frontsteps4:pCube5 4
+    2300092: frontsteps4:pCube5 5
+    2300094: frontsteps4:pCube6
+    2300096: frontsteps4:pCube6 1
+    2300098: frontsteps4:pCube6 2
+    2300100: frontsteps4:pCube6 3
+    2300102: frontsteps4:pCube6 4
+    2300104: frontsteps4:pCube6 5
+    2300106: frontsteps4:pCube7
+    2300108: frontsteps4:pCube7 1
+    2300110: frontsteps4:pCube7 2
+    2300112: frontsteps4:pCube7 3
+    2300114: frontsteps4:pCube7 4
+    2300116: frontsteps4:pCube7 5
+    2300118: frontsteps4:pCube8
+    2300120: frontsteps4:Stairs
+    2300122: campus
     3300000: CougarCircle
     3300002: GrassAndWalkway
     3300004: inner_grass
@@ -61,6 +238,55 @@ ModelImporter:
     3300020: //RootNode
     3300022: polySurface60
     3300024: Stairs
+    3300026: frontsteps3:Center
+    3300028: frontsteps3:pCube16
+    3300030: frontsteps3:pCube17
+    3300032: frontsteps3:pCube18
+    3300034: frontsteps3:pCube5
+    3300036: frontsteps3:pCube5 1
+    3300038: frontsteps3:pCube5 2
+    3300040: frontsteps3:pCube5 3
+    3300042: frontsteps3:pCube5 4
+    3300044: frontsteps3:pCube5 5
+    3300046: frontsteps3:pCube6
+    3300048: frontsteps3:pCube6 1
+    3300050: frontsteps3:pCube6 2
+    3300052: frontsteps3:pCube6 3
+    3300054: frontsteps3:pCube6 4
+    3300056: frontsteps3:pCube6 5
+    3300058: frontsteps3:pCube7
+    3300060: frontsteps3:pCube7 1
+    3300062: frontsteps3:pCube7 2
+    3300064: frontsteps3:pCube7 3
+    3300066: frontsteps3:pCube7 4
+    3300068: frontsteps3:pCube7 5
+    3300070: frontsteps3:pCube8
+    3300072: frontsteps3:Stairs
+    3300074: frontsteps4:Center
+    3300076: frontsteps4:pCube16
+    3300078: frontsteps4:pCube17
+    3300080: frontsteps4:pCube18
+    3300082: frontsteps4:pCube5
+    3300084: frontsteps4:pCube5 1
+    3300086: frontsteps4:pCube5 2
+    3300088: frontsteps4:pCube5 3
+    3300090: frontsteps4:pCube5 4
+    3300092: frontsteps4:pCube5 5
+    3300094: frontsteps4:pCube6
+    3300096: frontsteps4:pCube6 1
+    3300098: frontsteps4:pCube6 2
+    3300100: frontsteps4:pCube6 3
+    3300102: frontsteps4:pCube6 4
+    3300104: frontsteps4:pCube6 5
+    3300106: frontsteps4:pCube7
+    3300108: frontsteps4:pCube7 1
+    3300110: frontsteps4:pCube7 2
+    3300112: frontsteps4:pCube7 3
+    3300114: frontsteps4:pCube7 4
+    3300116: frontsteps4:pCube7 5
+    3300118: frontsteps4:pCube8
+    3300120: frontsteps4:Stairs
+    3300122: campus
     4300000: pCylinder1
     4300002: pCube1
     4300004: inner_grass
@@ -74,6 +300,55 @@ ModelImporter:
     4300020: GrassAndWalkway2
     4300022: polySurface60
     4300024: Stairs
+    4300026: frontsteps3:pCube7
+    4300028: frontsteps3:pCube6
+    4300030: frontsteps3:pCube5
+    4300032: frontsteps3:pCube7
+    4300034: frontsteps3:pCube6
+    4300036: frontsteps3:pCube5
+    4300038: frontsteps3:pCube8
+    4300040: frontsteps3:pCube17
+    4300042: frontsteps3:pCube18
+    4300044: frontsteps3:pCube7
+    4300046: frontsteps3:pCube6
+    4300048: frontsteps3:pCube5
+    4300050: frontsteps3:pCube7
+    4300052: frontsteps3:pCube6
+    4300054: frontsteps3:pCube5
+    4300056: frontsteps3:pCube7
+    4300058: frontsteps3:pCube6
+    4300060: frontsteps3:pCube5
+    4300062: frontsteps3:pCube16
+    4300064: frontsteps3:pCube7
+    4300066: frontsteps3:pCube6
+    4300068: frontsteps3:pCube5
+    4300070: frontsteps3:Stairs
+    4300072: frontsteps3:Center
+    4300074: frontsteps4:Center
+    4300076: frontsteps4:pCube7
+    4300078: frontsteps4:pCube6
+    4300080: frontsteps4:pCube5
+    4300082: frontsteps4:pCube7
+    4300084: frontsteps4:pCube6
+    4300086: frontsteps4:pCube5
+    4300088: frontsteps4:pCube8
+    4300090: frontsteps4:pCube17
+    4300092: frontsteps4:pCube18
+    4300094: frontsteps4:pCube7
+    4300096: frontsteps4:pCube6
+    4300098: frontsteps4:pCube5
+    4300100: frontsteps4:pCube7
+    4300102: frontsteps4:pCube6
+    4300104: frontsteps4:pCube5
+    4300106: frontsteps4:pCube7
+    4300108: frontsteps4:pCube6
+    4300110: frontsteps4:pCube5
+    4300112: frontsteps4:pCube16
+    4300114: frontsteps4:pCube7
+    4300116: frontsteps4:pCube6
+    4300118: frontsteps4:pCube5
+    4300120: frontsteps4:Stairs
+    4300122: campus
   materials:
     importMaterials: 1
     materialName: 0

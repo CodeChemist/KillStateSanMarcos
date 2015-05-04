@@ -53,6 +53,8 @@ ModelImporter:
     100090: group8
     100092: group9
     100094: left_planter_steps
+    100096: Center
+    100098: Stairs
     400000: //RootNode
     400002: Banisters
     400004: group1
@@ -101,6 +103,8 @@ ModelImporter:
     400090: group8
     400092: group9
     400094: left_planter_steps
+    400096: Center
+    400098: Stairs
     2300000: //RootNode
     2300002: pCube5
     2300004: pCube5 1
@@ -138,6 +142,8 @@ ModelImporter:
     2300068: pCylinder2
     2300070: pCylinder3
     2300072: left_planter_steps
+    2300074: Center
+    2300076: Stairs
     3300000: //RootNode
     3300002: pCube5
     3300004: pCube5 1
@@ -175,6 +181,8 @@ ModelImporter:
     3300068: pCylinder2
     3300070: pCylinder3
     3300072: left_planter_steps
+    3300074: Center
+    3300076: Stairs
     4300000: Stairsteps
     4300002: pCube7
     4300004: pCube6
@@ -211,6 +219,8 @@ ModelImporter:
     4300066: pCube20
     4300068: pCube21
     4300070: left_planter_steps
+    4300072: Stairs
+    4300074: Center
   materials:
     importMaterials: 1
     materialName: 0
