@@ -84,6 +84,8 @@ ModelImporter:
     100152: frontsteps4:pCube8
     100154: frontsteps4:Stairs
     100156: campus
+    100158: MainStairsRamp
+    100160: UpperLevelRamp
     400000: //RootNode
     400002: CougarCircle
     400004: GrassAndWalkway
@@ -163,6 +165,8 @@ ModelImporter:
     400152: frontsteps4:pCube8
     400154: frontsteps4:Stairs
     400156: campus
+    400158: MainStairsRamp
+    400160: UpperLevelRamp
     2300000: CougarCircle
     2300002: GrassAndWalkway
     2300004: inner_grass
@@ -225,6 +229,8 @@ ModelImporter:
     2300118: frontsteps4:pCube8
     2300120: frontsteps4:Stairs
     2300122: campus
+    2300124: MainStairsRamp
+    2300126: UpperLevelRamp
     3300000: CougarCircle
     3300002: GrassAndWalkway
     3300004: inner_grass
@@ -287,6 +293,8 @@ ModelImporter:
     3300118: frontsteps4:pCube8
     3300120: frontsteps4:Stairs
     3300122: campus
+    3300124: MainStairsRamp
+    3300126: UpperLevelRamp
     4300000: pCylinder1
     4300002: pCube1
     4300004: inner_grass
@@ -349,6 +357,8 @@ ModelImporter:
     4300118: frontsteps4:pCube5
     4300120: frontsteps4:Stairs
     4300122: campus
+    4300124: MainStairsRamp
+    4300126: UpperLevelRamp
   materials:
     importMaterials: 1
     materialName: 0
