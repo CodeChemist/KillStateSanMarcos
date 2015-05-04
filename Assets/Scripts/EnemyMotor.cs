@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections;
 //using Assets.Scripts; //Making sure the git revert took as well as error resolving.
 
-public class Motor : MonoBehaviour {
+public class EnemyMotor : MonoBehaviour {
 
     public float maxSpeed = 2.0f;
     public float maxAccel = 0.5f;
@@ -19,7 +19,7 @@ public class Motor : MonoBehaviour {
 	public float attackDelay = 1;
 
     // Kinematic
-    public Vector3 velocity;
+	public Vector3 velocity;
     public float rotation = 0f;
 
     // Steering
@@ -62,11 +62,11 @@ public class Motor : MonoBehaviour {
 			rotation = -maxRotation;
 
 		character.Translate(velocity * Time.deltaTime, Space.World);
-		character.Rotate(character.up, rotation);
+		//character.Rotate(character.up, rotation);
+		Vector3 EyeLine = character.position + new Vector3 (0f, (float)(GetComponent<CapsuleCollider> ().height - .2), 0f);
+		Debug.DrawRay (EyeLine, (target.position - EyeLine),Color.blue);
 
-		Debug.DrawRay (transform.position+ new Vector3 (0f, 0.8f, 0f), (target.position - transform.position),Color.blue);
-
-		if (Physics.Raycast (transform.position+ new Vector3 (0f, 0.8f, 0f), (target.position - transform.position), out hit, maxRange)) { //raycast to target
+		if (Physics.Raycast (EyeLine, (target.position - EyeLine), out hit, maxRange)) { //raycast to target
 			angle = Vector3.Angle (target.position - character.position, transform.forward);//angle between target and object
 
 			if ((hit.transform == target) && (angle <= (ViewAngle / 2))) {//if target is in sight and withing view width
@@ -78,8 +78,8 @@ public class Motor : MonoBehaviour {
 
 				// In Range and i can see you!
 			} else if (seen == true) {
-
 				velocity = (lastSeen - character.position).normalized * maxSpeed;
+				velocity.y = 0;
 				character.rotation = Quaternion.LookRotation (velocity);
 				//not seen, move to last location
 				//print ("lastSeen "+ lastSeen.x+ "position "+ character.position.x );
@@ -102,15 +102,16 @@ public class Motor : MonoBehaviour {
 			if (Time.time >= nextDamageStep)
 			{
 				nextDamageStep = Time.time + attackDelay;
-				playerHealth.currentHealth -= 10;
+//				playerHealth.currentHealth -= 10;
 			}
 		}
 	}
 
 	public void OnTriggerExit(Collider other) {
 		if (other.transform == target.transform) {
-			animator.SetBool("Attack",false);
 			nextDamageStep = Time.time + attackDelay;
+			animator.SetBool("Attack",false);
+
 		}
 	}
 
@@ -129,13 +130,18 @@ public class Motor : MonoBehaviour {
     // KinSeek
     public void KinSeek(Transform target)
     {
-		if (animator.GetBool("Attack") == true)
-			velocity = new Vector3 (0,0,0);
-		else
-		velocity = new Vector3 (target.position.x - character.position.x , 0f ,target.position.z - character.position.z).normalized * maxSpeed;
-		Vector3 lookAt = new Vector3(target.position.x - character.position.x, 0 ,target.position.z - character.position.z);
-		character.rotation = Quaternion.LookRotation(lookAt);
-    }
+		if (animator.GetBool ("Attack") == true)
+			velocity = new Vector3 (0, 0, 0);
+		else {
+			velocity = (target.position - character.position).normalized * maxSpeed;
+			velocity.y = 0;
+		}
+			Vector3 LookAt = (target.position - character.position).normalized * maxSpeed;
+			LookAt.y = 0;
+			character.rotation = Quaternion.Slerp (character.rotation, Quaternion.LookRotation (LookAt), Time.deltaTime * 5);
+		
+	}
+
 
 
 
@@ -216,7 +222,7 @@ public class Motor : MonoBehaviour {
     // Pursue
     public void Pursue(Transform target)
     {
-        Motor motor = target.GetComponent<Motor>();
+        EnemyMotor motor = target.GetComponent<EnemyMotor>();
 
         float maxPrediction = 5f;
         float prediction = 0f;
@@ -245,7 +251,7 @@ public class Motor : MonoBehaviour {
     // Evade
     public void Evade(Transform target)
     {
-        Motor motor = target.GetComponent<Motor>();
+		EnemyMotor motor = target.GetComponent<EnemyMotor>();
 
         float maxPrediction = 5f;
         float prediction = 0f;
