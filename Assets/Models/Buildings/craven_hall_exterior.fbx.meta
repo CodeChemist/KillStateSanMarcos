@@ -28,6 +28,11 @@ ModelImporter:
     100040: pPipe7
     100042: pPipe8
     100044: pPipe9
+    100046: craventower:group9
+    100048: craventower:pPipe20
+    100050: craventower:pPipe21
+    100052: craventower:pPipe22
+    100054: craventower:pPipe3
     400000: //RootNode
     400002: group9
     400004: pCube13
@@ -51,6 +56,11 @@ ModelImporter:
     400040: pPipe7
     400042: pPipe8
     400044: pPipe9
+    400046: craventower:group9
+    400048: craventower:pPipe20
+    400050: craventower:pPipe21
+    400052: craventower:pPipe22
+    400054: craventower:pPipe3
     2300000: pCube13
     2300002: pPipe10
     2300004: pPipe11
@@ -72,6 +82,10 @@ ModelImporter:
     2300036: pPipe7
     2300038: pPipe8
     2300040: pPipe9
+    2300042: craventower:pPipe20
+    2300044: craventower:pPipe21
+    2300046: craventower:pPipe22
+    2300048: craventower:pPipe3
     3300000: pCube13
     3300002: pPipe10
     3300004: pPipe11
@@ -93,6 +107,10 @@ ModelImporter:
     3300036: pPipe7
     3300038: pPipe8
     3300040: pPipe9
+    3300042: craventower:pPipe20
+    3300044: craventower:pPipe21
+    3300046: craventower:pPipe22
+    3300048: craventower:pPipe3
     4300000: pCube13
     4300002: pPipe3
     4300004: pPipe4
@@ -114,6 +132,10 @@ ModelImporter:
     4300036: pPipe20
     4300038: pPipe21
     4300040: pPipe22
+    4300042: craventower:pPipe20
+    4300044: craventower:pPipe21
+    4300046: craventower:pPipe22
+    4300048: craventower:pPipe3
   materials:
     importMaterials: 1
     materialName: 0
