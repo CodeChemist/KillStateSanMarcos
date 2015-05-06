@@ -29,8 +29,9 @@ public class PlayerHealth : MonoBehaviour
     public Color flashColour = new Color(1f, 0f, 0f, 0.1f);     //red, mostly transparent full screen image
 	private GameObject gm;		//ref to GM object
 	private GameObject hb;		//ref to GUI health box....IS RELEVANT??
-	private GameObject pMov;	//ref to player movement. Here goes!
+	//private GameObject pMov;	//ref to player movement. Here goes!
 
+	//public CharacterMotorMovement target;
 	//CharacterMotorMovement playerMovement;
 
     //Animator anim;      
@@ -49,8 +50,10 @@ public class PlayerHealth : MonoBehaviour
         //anim = GetComponent <Animator> ();                    
         //playerAudio = GetComponent <AudioSource> ();
 		//playerMovement = GetComponent <CharacterMotorMovement> ();		//attempting to call so movement can be halted upon death.
-		pMov = GameObject.Find ("CharacterMotorMovement");		//I just made this one up. would it work??
-        //playerShooting = GetComponentInChildren <PlayerShooting> ();        //this line was commented out when I get here...
+
+		//pMov = GameObject.Find ("CharacterMotorMovement");		//I just made this one up. would it work??
+		//CharacterMotorMovement characterMovement = GetComponent<CharacterMotorMovement>();
+		//playerShooting = GetComponentInChildren <PlayerShooting> ();        //this line was commented out when I get here...
         currentHealth = startingHealth;		//initializes starting health
 
 		gm = GameObject.Find ("GameManager");
@@ -108,7 +111,9 @@ public class PlayerHealth : MonoBehaviour
 
 		//pMov.SetActive = false;		//WHEN DO I ENABLE THIS??  
 		//Unity example has playerMovement.enabled = false; before I changed to pMov, but 
-		pMov.SetControllable = false;
+		//pMov.SetControllable = false;
+		//characterMovement.SetControllable();
+		//target.SetControllable.canControl = false;
 
 		//I WANT THESE LINES TO WORK. Havent tried them though.
         //playerShooting.enabled = false;        
