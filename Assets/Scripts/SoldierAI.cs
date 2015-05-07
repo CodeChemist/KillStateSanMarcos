@@ -5,24 +5,26 @@ using System.Collections.Generic;
 public class SoldierAI : MonoBehaviour {
 
 	public float ViewAngle = 180;
-	public float maxRange = 10f;
+	public float maxRange = 50f;
 	private float nextDamageStep;
 	public float attackDelay = 1;
 	private bool hasAttacked = false;
 
-	private Animation animation;
+	public Animation animation;
 	private Transform soldier;
 	private List<GameObject> targets;
 	private GameObject closest;
 
 	private ParticleEmitter Muzzleflash;
 	private Light[] MuzzleLight;
+
 	// Use this for initialization
 	void Start () {
 		soldier = this.transform;
 		animation = gameObject.GetComponent<Animation>();
 		Muzzleflash = gameObject.GetComponentInChildren<ParticleEmitter>();
 		MuzzleLight = gameObject.GetComponentsInChildren<Light>();
+		targets = new List<GameObject>();
 	}
 	
 	// Update is called once per frame
@@ -31,7 +33,7 @@ public class SoldierAI : MonoBehaviour {
 		GetTargets ();
 		FindClosest ();
 		
-		Debug.Log (closest);
+		//Debug.Log (closest);
 		if (closest != null) {
 			LookAtClosest ();
 			AttackClosest ();
@@ -48,7 +50,7 @@ public class SoldierAI : MonoBehaviour {
 	}
 
 	void GetTargets() {
-		targets = new List<GameObject>();
+		//targets = new List<GameObject>();
 		GameObject[] Zombies= GameObject.FindGameObjectsWithTag("Zombie");
 		
 		foreach(GameObject Zomb in Zombies)

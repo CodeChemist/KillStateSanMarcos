@@ -108,7 +108,7 @@ public class PlayerHealth : MonoBehaviour
 
 		//pMov.SetActive = false;		//WHEN DO I ENABLE THIS??  
 		//Unity example has playerMovement.enabled = false; before I changed to pMov, but 
-		pMov.SetControllable = false;
+		//pMov.SetControllable = false;
 
 		//I WANT THESE LINES TO WORK. Havent tried them though.
         //playerShooting.enabled = false;        

@@ -7,6 +7,6 @@ public class ExitLibrary : MonoBehaviour {
 
 		
 		// load next scene
-		Application.LoadLevel (0);
+		Application.LoadLevel (Application.loadedLevel + 1);
 	}
 }
