@@ -28,7 +28,7 @@ public class EnemyHealth : MonoBehaviour {
 			// set flag to true to prevent additional collisions
 			
 			// Send message to zombie to deduct health
-			Debug.Log ("Zombie Damage: " + amount);
+			//Debug.Log ("Zombie Damage: " + amount);
 			damaged = true;
 			
 			// attacks with anywhere from 0.5x to 1.5x base damage amount ~chris

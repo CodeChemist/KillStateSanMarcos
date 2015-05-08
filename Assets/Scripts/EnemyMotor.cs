@@ -6,15 +6,12 @@ using System.Collections;
 public class EnemyMotor : MonoBehaviour {
 
     public float maxSpeed = 2.0f;
-    public float maxAccel = 0.5f;
-    public float maxRotation = 1f;
-    public float maxAngular = 0.8f;
+
 	public Transform target;
 	public float ViewAngle = 180;
 	public float maxRange = 10f;
-
+	public float maxRotation = 1f;
 	private Animator animator;
-	private float nextDamageStep;
 	public float attackDelay = 1;
 
     // Kinematic
@@ -22,8 +19,7 @@ public class EnemyMotor : MonoBehaviour {
     public float rotation = 0f;
 
     // Steering
-    private Vector3 acceleration;
-    private float angular = 0f;
+
 	private Vector3 lastSeen;
 	private bool seen = false;
     private Transform character;
@@ -40,84 +36,71 @@ public class EnemyMotor : MonoBehaviour {
     {
 		//if(velocity.magnitude > 0)
 		//	Debug.Log (" speed " + velocity.magnitude);
+		if (animator.GetBool ("Dead") == true) {
+			velocity = new Vector3 (0, 0, 0); //stop moving
+			rotation = 0; //stop rotating
+		} 
+		else {
+			animator.SetFloat ("Speed", velocity.magnitude); //update animator
+			character.Translate (velocity * Time.deltaTime, Space.World);//move character
 
-		animator.SetFloat ("Speed", velocity.magnitude);
-		RaycastHit hit;
-		float angle;
-
-		if (acceleration.magnitude > maxAccel)
-			acceleration = acceleration.normalized * maxAccel;
-		if (angular > maxAngular)
-			angular = maxAngular;
-		else if (angular < -maxAngular)
-			angular = -maxAngular;
-
-		velocity += acceleration;
-		rotation += angular;
-
-		if (velocity.magnitude > maxSpeed)
-			velocity = velocity.normalized * maxSpeed;
-		if (rotation > maxRotation)
-			rotation = maxRotation;
-		else if (rotation < -maxRotation)
-			rotation = -maxRotation;
-
-		character.Translate(velocity * Time.deltaTime, Space.World);
-		//character.Rotate(character.up, rotation);
-		Vector3 EyeLine = character.position + new Vector3 (0f, (float)(GetComponent<CapsuleCollider> ().height - .2), 0f);
-		Debug.DrawRay (EyeLine, (target.position - EyeLine),Color.blue);
-
-		if (Physics.Raycast (EyeLine, (target.position - EyeLine), out hit, maxRange)) { //raycast to target
-			angle = Vector3.Angle (target.position - character.position, transform.forward);//angle between target and object
-
-			if ((hit.transform == target) && (angle <= (ViewAngle / 2))) {//if target is in sight and withing view width
-
-				seen = true;
-				wander = false;
-				lastSeen = target.position;
-				KinSeek (target);
-
-				// In Range and i can see you!
-			} else if (seen == true) {
-				velocity = (lastSeen - character.position).normalized * maxSpeed;
-				velocity.y = 0;
-				character.rotation = Quaternion.LookRotation (velocity);
-				//not seen, move to last location
-				//print ("lastSeen "+ lastSeen.x+ "position "+ character.position.x );
-				if ((lastSeen - character.position).magnitude < .1) { //arrived at last seen location
-
-					wander = true;
-					seen = false;
-				}
-			} else if (wander == true) {
+			if (CheckEyesight ()) // In Range and i can see you!
+				BeginHunt();
+			else if (seen == true) 
+				MoveToLastSeen ();
+			 else if (wander == true) 
 				KinWander ();
-			}
+
 		}
 	}
 
-	public void Attack(){
+	public bool CheckEyesight() {
+		RaycastHit hit;
+		float angle;
 	
-	//public void OnTriggerEnter (Collider other) {
-		//if (other.transform == target.transform) {
-			animator.SetBool("Attack",true);
-			if (Time.time >= nextDamageStep)
-			{
-				nextDamageStep = Time.time + attackDelay;
-				//other.SendMessage("attack", 10);
+		Vector3 EyeLine = character.position + new Vector3 (0f, (float)(GetComponent<CapsuleCollider> ().height - .2), 0f);
+		//Debug.DrawRay (EyeLine, (target.position - EyeLine),Color.blue);
+	
+		if (Physics.Raycast (EyeLine, (target.position - EyeLine), out hit, maxRange)) { //raycast from eye level to target, true if something in range
+			angle = Vector3.Angle (target.position - character.position, transform.forward);//angle between target and object
+		
+			if ((hit.transform == target) && (angle <= (ViewAngle / 2))) {//if target is in sight and withing view width
+				return true;
 			}
-		//}
+			return false;
+		}
+		return false;
+	}
+
+	public void BeginHunt() {
+		seen = true;
+		wander = false;
+		lastSeen = target.position;
+		KinSeek (target);
+	}
+
+	public void MoveToLastSeen() {
+		velocity = (lastSeen - character.position).normalized * maxSpeed;
+		velocity.y = 0;
+		character.rotation = Quaternion.LookRotation (velocity);
+		//not seen, move to last location
+		//print ("lastSeen "+ lastSeen.x+ "position "+ character.position.x );
+		if ((lastSeen - character.position).magnitude < .1) { //arrived at last seen location
+			wander = true;
+			seen = false;
+		}
+	}
+
+
+
+	public void Attack(){
+			animator.SetBool("Attack",true);
 	}
 
 	public void Walk(){
-	//public void OnTriggerExit(Collider other) {
-		//if (other.transform == target.transform) {
-			nextDamageStep = Time.time + attackDelay;
-			animator.SetBool("Attack",false);
-
-		//}
+		animator.SetBool("Attack",false);
 	}
-
-
+	
 	public void Dead() {
 		StartCoroutine (KillCoroutine());
 	}
@@ -125,8 +108,10 @@ public class EnemyMotor : MonoBehaviour {
 	IEnumerator KillCoroutine() {
 
 		animator.SetBool("Dead",true);
-		yield return new WaitForSeconds (3f);
+		yield return new WaitForSeconds (3.0f);
+
 		Destroy (gameObject);
+		Debug.Log (Time.time);
 	}
 
 	// Begin various functions for movement, pass in target
@@ -135,8 +120,8 @@ public class EnemyMotor : MonoBehaviour {
     {
         velocity = Vector3.zero;
         rotation = 0f;
-        acceleration = Vector3.zero;
-        angular = 0f;
+      //  acceleration = Vector3.zero;
+      //  angular = 0f;
     }
 
 
@@ -193,7 +178,34 @@ public class EnemyMotor : MonoBehaviour {
         rotation = Random.Range(-10f, 10f) * maxRotation;
     }
 
-    // Dynamic Steering
+
+	/* 
+
+    // Dynamic Steering, couldnt get working right -Harrison
+
+    private Vector3 acceleration;
+    private float angular = 0f;
+    public float maxAccel = 0.5f;
+    public float maxAngular = 0.8f;
+
+
+		if (acceleration.magnitude > maxAccel)
+			acceleration = acceleration.normalized * maxAccel;
+		if (angular > maxAngular)
+			angular = maxAngular;
+		else if (angular < -maxAngular)
+			angular = -maxAngular;
+
+		velocity += acceleration;
+		rotation += angular;
+
+		if (velocity.magnitude > maxSpeed)
+			velocity = velocity.normalized * maxSpeed;
+		if (rotation > maxRotation)
+			rotation = maxRotation;
+		else if (rotation < -maxRotation)
+			rotation = -maxRotation;
+
 
     // Seek
     public void Seek(Transform target)
@@ -254,9 +266,6 @@ public class EnemyMotor : MonoBehaviour {
         else
             prediction = distance / speed;
 
-        // Currently makes a game object and uses that transform then destroys it,
-        // but that seems like a lot of processing. Maybe change this?
-
         GameObject newTarget = new GameObject();
         newTarget.transform.position = target.position + motor.velocity * prediction;
 
@@ -268,7 +277,6 @@ public class EnemyMotor : MonoBehaviour {
     // Evade
     public void Evade(Transform target)
     {
-		EnemyMotor motor = target.GetComponent<EnemyMotor>();
 
         float maxPrediction = 5f;
         float prediction = 0f;
@@ -283,11 +291,8 @@ public class EnemyMotor : MonoBehaviour {
         else
             prediction = distance / speed;
 
-        // Currently makes a game object and uses that transform then destroys it,
-        // but that seems like a lot of processing. Maybe change this?
-
         GameObject newTarget = new GameObject();
-        newTarget.transform.position = target.position + motor.velocity * prediction;
+        newTarget.transform.position = target.position + enemy.velocity * prediction;
 
         Flee(newTarget.transform);
 
@@ -310,4 +315,7 @@ public class EnemyMotor : MonoBehaviour {
             Seek(newTarget.transform);
         }
     }
+
+*/
+
 }
