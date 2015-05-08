@@ -9,7 +9,7 @@ public class SoldierAI : MonoBehaviour {
 	private float nextDamageStep;
 	private bool hasAttacked = false;
 
-	public Animation animation;
+	private Animation animation;
 	private Transform soldier;
 	private List<GameObject> targets;
 	private GameObject closest;
@@ -96,7 +96,7 @@ public class SoldierAI : MonoBehaviour {
 		{
 			
 			animation.Play("Idle Firing");
-			nextDamageStep = Time.time + Random.Range(.5, 1.5);
+			nextDamageStep = Time.time + Random.Range(.5f, 1.5f);
 			MFlash(true);
 		//	closest.SendMessage("attack", 10);
 		}

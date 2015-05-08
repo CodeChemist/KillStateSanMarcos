@@ -13,7 +13,6 @@ public class EnemyMotor : MonoBehaviour {
 	public float ViewAngle = 180;
 	public float maxRange = 10f;
 
-	private PlayerHealth playerHealth;
 	private Animator animator;
 	private float nextDamageStep;
 	public float attackDelay = 1;
@@ -34,7 +33,6 @@ public class EnemyMotor : MonoBehaviour {
 	void Start () {
         character = this.transform;
 		animator = GetComponentInChildren<Animator>();
-		playerHealth = target.GetComponent<PlayerHealth>();
 	}
 	
 	// Update is called once per frame
