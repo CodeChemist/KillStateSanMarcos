@@ -92,25 +92,26 @@ public class EnemyMotor : MonoBehaviour {
 		}
 	}
 
-
-
-	public void OnTriggerEnter (Collider other) {
-		if (other.transform == target.transform) {
+	public void Attack(){
+	
+	//public void OnTriggerEnter (Collider other) {
+		//if (other.transform == target.transform) {
 			animator.SetBool("Attack",true);
 			if (Time.time >= nextDamageStep)
 			{
 				nextDamageStep = Time.time + attackDelay;
 				//other.SendMessage("attack", 10);
 			}
-		}
+		//}
 	}
 
-	public void OnTriggerExit(Collider other) {
-		if (other.transform == target.transform) {
+	public void Walk(){
+	//public void OnTriggerExit(Collider other) {
+		//if (other.transform == target.transform) {
 			nextDamageStep = Time.time + attackDelay;
 			animator.SetBool("Attack",false);
 
-		}
+		//}
 	}
 
 	// Begin various functions for movement, pass in target

@@ -19,9 +19,9 @@ using System.Collections;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int startingHealth = 100;
-    public int currentHealth;
-    public Slider healthSlider;
+    public float startingHealth = 100f;
+    public float currentHealth;
+    //public Slider healthSlider;
     public Image damageImage;
     //public AudioClip deathClip;           //I don't have a clip for that.
     public float flashSpeed = 5f;           //used in the damageImage control. 
@@ -54,8 +54,8 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = startingHealth;		//initializes starting health
 
 		gm = GameObject.Find ("GameManager");
-		hb = GameObject.Find("HealthBox");
-		hb.SendMessage ("UpdateHealth", currentHealth);	//WHAT DOES DO?
+		hb = GameObject.Find("HealthBar");
+		//hb.SendMessage ("UpdateHealth", currentHealth);
     }
 
 	/// <summary>
@@ -63,6 +63,7 @@ public class PlayerHealth : MonoBehaviour
 	/// </summary>
     void Update ()
     {
+		return;
         if(damaged)
         {
             damageImage.color = flashColour;
@@ -75,13 +76,15 @@ public class PlayerHealth : MonoBehaviour
     }
 
 
-    public void TakeDamage (int amount)
+    public void TakeDamage (float amount)
     {
-        damaged = true;
+		Debug.Log ("Took Damage: " + amount);
+		damaged = true;
 
-        currentHealth -= amount;
+		// attacks with anywhere from 0.5x to 1.5x base damage amount ~chris
+		currentHealth -= (amount/2 + Random.Range(0f, amount));
 		hb.SendMessage ("UpdateHealth", currentHealth);
-		healthSlider.value = currentHealth;
+		//healthSlider.value = currentHealth;
 
         //playerAudio.Play ();
 
