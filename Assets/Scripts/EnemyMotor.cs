@@ -117,6 +117,18 @@ public class EnemyMotor : MonoBehaviour {
 		//}
 	}
 
+
+	public void Dead() {
+		StartCoroutine (KillCoroutine());
+	}
+
+	IEnumerator KillCoroutine() {
+
+		animator.SetBool("Dead",true);
+		yield return new WaitForSeconds (3f);
+		Destroy (gameObject);
+	}
+
 	// Begin various functions for movement, pass in target
 
     public void Stop()
@@ -126,6 +138,7 @@ public class EnemyMotor : MonoBehaviour {
         acceleration = Vector3.zero;
         angular = 0f;
     }
+
 
     // Kinematic Steering
 

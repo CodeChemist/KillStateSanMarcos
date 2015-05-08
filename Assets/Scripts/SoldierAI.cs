@@ -16,7 +16,7 @@ public class SoldierAI : MonoBehaviour {
 
 	private ParticleEmitter Muzzleflash;
 	private Light[] MuzzleLight;
-
+	public float AttackDamage;
 	// Use this for initialization
 	void Start () {
 		soldier = this.transform;
@@ -98,7 +98,7 @@ public class SoldierAI : MonoBehaviour {
 			animation.Play("Idle Firing");
 			nextDamageStep = Time.time + Random.Range(.5f, 1.5f);
 			MFlash(true);
-		//	closest.SendMessage("attack", 10);
+			closest.SendMessage("TakeDamage", AttackDamage);
 		}
 
 

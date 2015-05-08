@@ -17,14 +17,14 @@ public class EnemyAttack : MonoBehaviour {
 	// Triggers when the player comes within Attack Distance
 	void OnTriggerEnter(Collider c){
 		if (c.tag == "Player") {
-			transform.parent.SendMessage ("Attack", c);
+			transform.parent.SendMessage ("Attack");
 		}
 	}
 	
 	// Triggers when the player leaves Attack Distance
 	void OnTriggerExit(Collider c){
 		if (c.tag == "Player") {
-			transform.parent.SendMessage ("Walk", c);
+			transform.parent.SendMessage ("Walk");
 		}
 	}
 }
