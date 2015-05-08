@@ -102,7 +102,7 @@ public class EnemyMotor : MonoBehaviour {
 			if (Time.time >= nextDamageStep)
 			{
 				nextDamageStep = Time.time + attackDelay;
-//				playerHealth.currentHealth -= 10;
+				//other.SendMessage("attack", 10);
 			}
 		}
 	}

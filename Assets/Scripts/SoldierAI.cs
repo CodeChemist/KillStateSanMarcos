@@ -7,7 +7,6 @@ public class SoldierAI : MonoBehaviour {
 	public float ViewAngle = 180;
 	public float maxRange = 50f;
 	private float nextDamageStep;
-	public float attackDelay = 1;
 	private bool hasAttacked = false;
 
 	public Animation animation;
@@ -97,7 +96,7 @@ public class SoldierAI : MonoBehaviour {
 		{
 			
 			animation.Play("Idle Firing");
-			nextDamageStep = Time.time + attackDelay;
+			nextDamageStep = Time.time + Random.Range(.5, 1.5);
 			MFlash(true);
 		//	closest.SendMessage("attack", 10);
 		}
