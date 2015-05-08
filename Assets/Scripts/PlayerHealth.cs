@@ -76,23 +76,42 @@ public class PlayerHealth : MonoBehaviour
     }
 
 
-    public void TakeDamage (float amount)
-    {
-		Debug.Log ("Took Damage: " + amount);
-		damaged = true;
+    public void TakeDamage (float amount){
+		StartCoroutine (TouchedCoroutine (amount));
 
-		// attacks with anywhere from 0.5x to 1.5x base damage amount ~chris
-		currentHealth -= (amount/2 + Random.Range(0f, amount));
-		hb.SendMessage ("UpdateHealth", currentHealth);
-		//healthSlider.value = currentHealth;
+	}
 
-        //playerAudio.Play ();
+	// Handles attacking player, prevents multiple successive collisions
+	IEnumerator TouchedCoroutine(float amount){
+		// check if the player has already been attacked
+		if (!damaged) {
+			// set flag to true to prevent additional collisions
+			damaged = true;
+		
+			// Send message to player to deduct health
+			Debug.Log ("Took Damage: " + amount);
+			damaged = true;
+			
+			// attacks with anywhere from 0.5x to 1.5x base damage amount ~chris
+			currentHealth -= (amount / 2 + Random.Range (0f, amount));
+			hb.SendMessage ("UpdateHealth", currentHealth);
+			//healthSlider.value = currentHealth;
+			
+			//playerAudio.Play ();
+			
+			if (currentHealth <= 0 && !isDead) {
+				Death ();
+			}
+		
+			// Pause for a second before allowing additional collisions
+			yield return new WaitForSeconds (1.0f);
+		
+			// turn flag off to reallow collisions
+			damaged = false;
+		}
 
-        if(currentHealth <= 0 && !isDead)
-        {
-            Death ();
-        }
-    }
+	}
+
 
 	/// <summary>
 	/// Death this instance. Player has died and sees slow(ish) fade to respawn.

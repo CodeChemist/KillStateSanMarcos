@@ -38,6 +38,9 @@ public class EnemyMotor : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
+		//if(velocity.magnitude > 0)
+		//	Debug.Log (" speed " + velocity.magnitude);
+
 		animator.SetFloat ("Speed", velocity.magnitude);
 		RaycastHit hit;
 		float angle;
@@ -129,7 +132,9 @@ public class EnemyMotor : MonoBehaviour {
     // KinSeek
     public void KinSeek(Transform target)
     {
-		if (animator.GetBool ("Attack") == true)
+		float dist = Vector3.Distance(transform.position, target.position);
+		if (animator.GetBool("Attack") && dist < 0.1)
+//			velocity = velocity;
 			velocity = new Vector3 (0, 0, 0);
 		else {
 			velocity = (target.position - character.position).normalized * maxSpeed;
