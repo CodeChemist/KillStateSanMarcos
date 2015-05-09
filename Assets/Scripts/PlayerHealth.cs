@@ -27,9 +27,8 @@ public class PlayerHealth : MonoBehaviour
     public float flashSpeed = 5f;           //used in the damageImage control. 
 	public float deathFlashSpeed = 0.1f;	//used in player death HOPEFULLY a slower flash/fade to respawn.
     public Color flashColour = new Color(1f, 0f, 0f, 0.1f);     //red, mostly transparent full screen image
-	private GameObject gm;		//ref to GM object
+
 	private GameObject hb;		//ref to GUI health box....IS RELEVANT??
-	private GameObject pMov;	//ref to player movement. Here goes!
 
 	//CharacterMotorMovement playerMovement;
 
@@ -47,33 +46,13 @@ public class PlayerHealth : MonoBehaviour
     {
         //anim = GetComponent <Animator> ();                    
         //playerAudio = GetComponent <AudioSource> ();
-		//playerMovement = GetComponent <CharacterMotorMovement> ();		//attempting to call so movement can be halted upon death.
-		pMov = GameObject.Find ("CharacterMotorMovement");		//I just made this one up. would it work??
+
         //playerShooting = GetComponentInChildren <PlayerShooting> ();        //this line was commented out when I get here...
         currentHealth = startingHealth;		//initializes starting health
-
-		gm = GameObject.Find ("GameManager");
+		
 		hb = GameObject.Find("HealthBar");
 		//hb.SendMessage ("UpdateHealth", currentHealth);
     }
-
-	/// <summary>
-	/// Update this instance with damage flash as health goes down.
-	/// </summary>
-    void Update ()
-    {
-		return;
-        if(damaged)
-        {
-            damageImage.color = flashColour;
-        }
-        else
-        {
-            damageImage.color = Color.Lerp (damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
-        }
-        damaged = false;
-    }
-
 
     public void TakeDamage (float amount){
 		StartCoroutine (TouchedCoroutine (amount));
@@ -127,11 +106,7 @@ public class PlayerHealth : MonoBehaviour
 
         //playerAudio.clip = deathClip;
         //playerAudio.Play ();
-
-		//pMov.SetActive = false;		//WHEN DO I ENABLE THIS??  
-		//Unity example has playerMovement.enabled = false; before I changed to pMov, but 
-		//pMov.SetControllable = false;
-
+		
 		//I WANT THESE LINES TO WORK. Havent tried them though.
         //playerShooting.enabled = false;        
     }

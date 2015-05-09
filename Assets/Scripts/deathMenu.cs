@@ -37,7 +37,7 @@ public class deathMenu : MonoBehaviour {
 	/// </summary>
 	public void RestartGame()
 	{
-		Application.LoadLevel(2);
+		Application.LoadLevel(1);
 	}
 	
 	/// <summary>

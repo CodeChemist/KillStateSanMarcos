@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (esc == false)
-		Screen.lockCursor = true;
+			Screen.lockCursor = true;
 
 		if (Input.GetKey ("escape")) {
 			esc = true;

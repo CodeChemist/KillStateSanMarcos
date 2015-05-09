@@ -1,0 +1,116 @@
+Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 470 (ID=0x6cd)
+    Vendor:   NVIDIA
+    VRAM:     1234 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\KillStateSanMarcos\Built Game\KSSM_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\KillStateSanMarcos\Built Game\KSSM_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\KillStateSanMarcos\Built Game\KSSM_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\KillStateSanMarcos\Built Game\KSSM_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\KillStateSanMarcos\Built Game\KSSM_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\KillStateSanMarcos\Built Game\KSSM_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\KillStateSanMarcos\Built Game\KSSM_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\KillStateSanMarcos\Built Game\KSSM_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\KillStateSanMarcos\Built Game\KSSM_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\KillStateSanMarcos\Built Game\KSSM_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.052 seconds
+desktop: 1920x1080 59Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\KillStateSanMarcos\Built Game\KSSM_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\KillStateSanMarcos\Built Game\KSSM_Data\Managed\System.dll (this message is harmless)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.395347 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 5754.
+Total: 0.709692 ms (FindLiveObjects: 0.225496 ms CreateObjectMapping: 0.087206 ms MarkObjects: 0.351014 ms  DeleteObjects: 0.044880 ms)
+
+Platform assembly: C:\KillStateSanMarcos\Built Game\KSSM_Data\Managed\Boo.Lang.dll (this message is harmless)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.211448 ms
+
+Unloading 106 unused Assets to reduce memory usage. Loaded Objects now: 312.
+Total: 1.108506 ms (FindLiveObjects: 0.025176 ms CreateObjectMapping: 0.031744 ms MarkObjects: 0.223306 ms  DeleteObjects: 0.827913 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1048 -> priority: 1 
+  Thread -> id: 630 -> priority: 1 
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.404652 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 5757.
+Total: 0.764789 ms (FindLiveObjects: 0.275119 ms CreateObjectMapping: 0.075895 ms MarkObjects: 0.391151 ms  DeleteObjects: 0.021892 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.602690 ms
+
+Unloading 106 unused Assets to reduce memory usage. Loaded Objects now: 312.
+Total: 0.591470 ms (FindLiveObjects: 0.020068 ms CreateObjectMapping: 0.018244 ms MarkObjects: 0.156898 ms  DeleteObjects: 0.395165 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.649851 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 5757.
+Total: 0.923876 ms (FindLiveObjects: 0.347366 ms CreateObjectMapping: 0.079908 ms MarkObjects: 0.470330 ms  DeleteObjects: 0.025176 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Shader 'Nature/Terrain/Diffuse': fallback shader 'Diffuse' not found
+Shader 'Nature/Terrain/Diffuse': dependency 'AddPassShader' shader 'Hidden/TerrainEngine/Splatmap/Lightmap-AddPass' not found
+Shader 'Nature/Terrain/Diffuse': dependency 'BaseMapShader' shader 'Diffuse' not found
+UnloadTime: 3.073021 ms
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 4675.
+Total: 1.123466 ms (FindLiveObjects: 0.292633 ms CreateObjectMapping: 0.052542 ms MarkObjects: 0.409395 ms  DeleteObjects: 0.368164 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.115347 ms
+
+Unloading 155 unused Assets to reduce memory usage. Loaded Objects now: 312.
+Total: 2.344355 ms (FindLiveObjects: 0.016054 ms CreateObjectMapping: 0.019338 ms MarkObjects: 0.147411 ms  DeleteObjects: 2.161185 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.408301 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 5757.
+Total: 0.678312 ms (FindLiveObjects: 0.217468 ms CreateObjectMapping: 0.078449 ms MarkObjects: 0.360866 ms  DeleteObjects: 0.020798 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Shader 'Nature/Terrain/Diffuse': fallback shader 'Diffuse' not found
+Shader 'Nature/Terrain/Diffuse': dependency 'AddPassShader' shader 'Hidden/TerrainEngine/Splatmap/Lightmap-AddPass' not found
+Shader 'Nature/Terrain/Diffuse': dependency 'BaseMapShader' shader 'Diffuse' not found
+UnloadTime: 3.024127 ms
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 4675.
+Total: 1.160684 ms (FindLiveObjects: 0.292633 ms CreateObjectMapping: 0.052907 ms MarkObjects: 0.421071 ms  DeleteObjects: 0.393340 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.309464 ms
+
+Unloading 155 unused Assets to reduce memory usage. Loaded Objects now: 312.
+Total: 3.725062 ms (FindLiveObjects: 0.039407 ms CreateObjectMapping: 0.033933 ms MarkObjects: 0.244834 ms  DeleteObjects: 3.406157 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.513751 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 5757.
+Total: 0.662987 ms (FindLiveObjects: 0.216738 ms CreateObjectMapping: 0.076624 ms MarkObjects: 0.350285 ms  DeleteObjects: 0.018973 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Shader 'Nature/Terrain/Diffuse': fallback shader 'Diffuse' not found
+Shader 'Nature/Terrain/Diffuse': dependency 'AddPassShader' shader 'Hidden/TerrainEngine/Splatmap/Lightmap-AddPass' not found
+Shader 'Nature/Terrain/Diffuse': dependency 'BaseMapShader' shader 'Diffuse' not found
+UnloadTime: 2.967206 ms
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 4675.
+Total: 0.895416 ms (FindLiveObjects: 0.188643 ms CreateObjectMapping: 0.052177 ms MarkObjects: 0.310877 ms  DeleteObjects: 0.343352 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.673112 ms
+
+Unloading 155 unused Assets to reduce memory usage. Loaded Objects now: 312.
+Total: 3.628369 ms (FindLiveObjects: 0.027366 ms CreateObjectMapping: 0.034663 ms MarkObjects: 0.250307 ms  DeleteObjects: 3.315302 ms)
+
