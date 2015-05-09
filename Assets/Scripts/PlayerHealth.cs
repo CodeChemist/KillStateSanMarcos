@@ -40,7 +40,7 @@ public class PlayerHealth : MonoBehaviour
                                             //not used in this project. does Harrison have something already?
 
     //PlayerShooting playerShooting;        //this line was commented out when I get here...
-    bool isDead;
+    //bool isDead;
     bool damaged;
 
 
@@ -117,7 +117,9 @@ public class PlayerHealth : MonoBehaviour
 	/// </summary>
     void Death ()
     {
-        isDead = true;
+
+		Application.LoadLevel(3);
+        //isDead = true;
 
         //playerShooting.DisableEffects ();        //this line was commented out when I get here...
 

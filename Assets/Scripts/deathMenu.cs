@@ -31,7 +31,7 @@ public class deathMenu : MonoBehaviour {
 
 	
 	/// <summary>
-	/// Function used by the Play button to start the game. The "1" in the LoadLevel 
+	/// Function used by the Restart button to restart the game. The "2" in the LoadLevel 
 	/// function refers to the scene number. Change this to whatever the first level 
 	/// is.
 	/// </summary>
@@ -41,7 +41,7 @@ public class deathMenu : MonoBehaviour {
 	}
 	
 	/// <summary>
-	/// Function used by the Yes button within the quit menu to exit the game.
+	/// Function used by the Quit button within the quit menu to exit the game.
 	/// </summary>
 	public void ExitGame()
 	{
