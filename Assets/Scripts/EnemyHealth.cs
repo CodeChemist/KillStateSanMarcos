@@ -23,7 +23,7 @@ public class EnemyHealth : MonoBehaviour {
 
 
 	IEnumerator TouchedCoroutine(float amount){
-		// check if the player has already been attacked
+		// check if the enemy has already been attacked
 		if (!damaged) {
 			// set flag to true to prevent additional collisions
 			
