@@ -88,7 +88,7 @@ public class PlayerHealth : MonoBehaviour
 			damaged = true;
 		
 			// Send message to player to deduct health
-			Debug.Log ("Took Damage: " + amount);
+//			Debug.Log ("Took Damage: " + amount);
 
 			// attacks with anywhere from 0.5x to 1.5x base damage amount ~chris
 			currentHealth -= (amount / 2 + Random.Range (0f, amount));
