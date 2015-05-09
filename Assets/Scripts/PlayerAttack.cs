@@ -3,10 +3,9 @@ using System.Collections;
 
 public class PlayerAttack : MonoBehaviour {
 
-	public float rotationDegreesPerSecond = 30f;
+	private float rotationDegreesPerSecond;
 	public float rotationDegreesAmount = 60f;
 	public float totalRotation = 0;
-	public float AttackDamage = 25;
 	private bool atk = false;
 	private bool back = false;
 	// Use this for initialization
@@ -16,7 +15,6 @@ public class PlayerAttack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
 		//if we haven't reached the desired rotation, swing
 		if (Input.GetMouseButtonDown (0))
 			atk = true;
@@ -33,9 +31,13 @@ public class PlayerAttack : MonoBehaviour {
 			if (totalRotation <= 0)
 				back = false;
 		}
-
 	}
-	
+
+	void SetSwingInfo(float DPS)
+	{
+		rotationDegreesPerSecond = DPS;
+	}
+
 	void SwingOpen()
 	{   
 		float currentAngleZ = transform.localRotation.eulerAngles.x;
