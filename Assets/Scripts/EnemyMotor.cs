@@ -111,7 +111,7 @@ public class EnemyMotor : MonoBehaviour {
 		yield return new WaitForSeconds (3.0f);
 
 		Destroy (gameObject);
-		Debug.Log (Time.time);
+
 	}
 
 	// Begin various functions for movement, pass in target
