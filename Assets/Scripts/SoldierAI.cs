@@ -9,20 +9,23 @@ public class SoldierAI : MonoBehaviour {
 	private float nextDamageStep;
 	private bool hasAttacked = false;
 
-	private Animation animation;
+	private Animation animate;
 	private Transform soldier;
 	private List<GameObject> targets;
 	private GameObject closest;
 
 	private ParticleEmitter Muzzleflash;
 	private Light[] MuzzleLight;
+	private AudioSource GunShot;
+
 	public float AttackDamage;
 	// Use this for initialization
 	void Start () {
 		soldier = this.transform;
-		animation = gameObject.GetComponent<Animation>();
+		animate = gameObject.GetComponent<Animation>();
 		Muzzleflash = gameObject.GetComponentInChildren<ParticleEmitter>();
 		MuzzleLight = gameObject.GetComponentsInChildren<Light>();
+		GunShot = gameObject.GetComponentInChildren <AudioSource>();
 		targets = new List<GameObject>();
 	}
 	
@@ -37,7 +40,7 @@ public class SoldierAI : MonoBehaviour {
 			LookAtClosest ();
 			AttackClosest ();
 		} else if (hasAttacked == true)
-			animation.Play ("Idle Aim");
+			animate.Play ("Idle Aim");
 	}
 
 
@@ -46,6 +49,7 @@ public class SoldierAI : MonoBehaviour {
 		Muzzleflash.emit = Boo;
 		MuzzleLight[0].enabled = Boo;
 		MuzzleLight [1].enabled = Boo;
+		if (Boo) GunShot.Play();
 	}
 
 	void GetTargets() {
@@ -95,7 +99,7 @@ public class SoldierAI : MonoBehaviour {
 		if (Time.time >= nextDamageStep)
 		{
 			
-			animation.Play("Idle Firing");
+			animate.Play("Idle Firing");
 			nextDamageStep = Time.time + Random.Range(.5f, 1.5f);
 			MFlash(true);
 			closest.SendMessage("TakeDamage", AttackDamage);

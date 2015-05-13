@@ -8,8 +8,9 @@ public class PlayerWeapon : MonoBehaviour {
 	public float AttackDamage;
 
 	void Update() {
-		if (transform.parent != null)
-		transform.parent.SendMessage("SetSwingInfo",rotationDegreesPerSecond);
+		if (transform.parent != null) {
+			transform.parent.SendMessage ("SetSwingInfo", rotationDegreesPerSecond);
+		}
 	}
 
 	// Triggers while collider 

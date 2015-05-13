@@ -95,7 +95,8 @@ public class PlayerHealth : MonoBehaviour
 	/// </summary>
     void Death ()
     {
-
+		Cursor.visible = true;
+		Cursor.lockState = CursorLockMode.None;
 		Application.LoadLevel(3);
         //isDead = true;
 
